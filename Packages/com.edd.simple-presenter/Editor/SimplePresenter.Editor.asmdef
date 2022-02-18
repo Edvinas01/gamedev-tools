@@ -1,0 +1,20 @@
+{
+    "name": "SimplePresenter.Editor",
+    "rootNamespace": "SimplePresenter",
+    "references": [
+        "SimplePresenter.Runtime",
+        "Chark.ScriptableEvents",
+        "Chark.ScriptableEvents.Editor"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

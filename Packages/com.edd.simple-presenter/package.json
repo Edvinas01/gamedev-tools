@@ -1,0 +1,15 @@
+{
+  "name": "com.edd.simple-presenter",
+  "displayName": "Simple Presenter",
+  "author": {
+    "name": "Edvinas",
+    "url": "https://edvinas.dev"
+  },
+  "version": "1.0.0",
+  "unity": "2020.3",
+  "description": "Simple presentation tools",
+  "keywords": [
+  ],
+  "samples": [
+  ]
+}
