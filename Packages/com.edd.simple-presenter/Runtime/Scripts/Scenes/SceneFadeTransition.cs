@@ -9,7 +9,7 @@ namespace SimplePresenter.Scenes
     /// </summary>
     public sealed class SceneFadeTransition : BaseSceneTransition
     {
-        #region Editor
+        #region Editor Fields
 
         [Header("Dependencies")]
         [Tooltip("Canvas group whose alpha value to change on fade")]

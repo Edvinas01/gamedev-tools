@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4ffea83e109454fbae368d53777ad87, type: 3}
+  m_Name: Slide_Introduction_05_AboutProjects
+  m_EditorClassIdentifier: 
+  sceneReference: {fileID: 11400000, guid: 0263b61742e78dc4c913cfda63fab459, type: 2}
+  slideType: 3
+  title: Introduction
+  text: 
+  customContent: {fileID: 3380100364615639742, guid: f3227fa01c205ae41ab6748cb6fb9119, type: 3}

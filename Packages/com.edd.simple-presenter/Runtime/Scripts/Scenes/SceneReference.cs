@@ -12,7 +12,7 @@ namespace SimplePresenter.Scenes
     )]
     public sealed class SceneReference : ScriptableObject
     {
-        #region Editor
+        #region Editor Fields
 
         [Tooltip("Scene build index assigned to this reference")]
         [Scene]

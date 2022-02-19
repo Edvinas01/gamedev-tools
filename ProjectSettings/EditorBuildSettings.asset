@@ -9,9 +9,15 @@ EditorBuildSettings:
     path: Assets/Scenes/SetupScene.unity
     guid: 89d01a59adefa3348966e76f806db9eb
   - enabled: 1
-    path: Assets/Scenes/SlideScene_Introduction.unity
+    path: Assets/Scenes/SlideScene_Night_Cube.unity
+    guid: f1b15b2f57bb7a9449ea0a38b5685f15
+  - enabled: 1
+    path: Assets/Scenes/SlideScene_Day_Environment.unity
     guid: 6aa79fb5ca73ce24bab2bba1c36b624f
   - enabled: 1
-    path: Assets/Scenes/SlideScene_Singletons.unity
-    guid: e172f87f52f20374a936d578c1f254a8
+    path: Assets/Scenes/SlideScene_Night_Evnironment.unity
+    guid: 6e03494b6b9e5ac47b40ed36549e72e9
+  - enabled: 1
+    path: Assets/Scenes/SlideScene_Day_Clicker_BasicComponents.unity
+    guid: 6821523e53d818e46b4088ace562eb3e
   m_configObjects: {}

@@ -10,7 +10,7 @@ namespace SimplePresenter.Slides
     /// </summary>
     public sealed class SlideNavigation : MonoBehaviour
     {
-        #region Editor
+        #region Editor Fields
 
         [Header("Dependencies")]
         [Tooltip("Presentation state")]
@@ -32,6 +32,19 @@ namespace SimplePresenter.Slides
         [Tooltip("Button to exit the game")]
         [SerializeField]
         private Button exitButton;
+
+        [Header("Navigation")]
+        [SerializeField]
+        private KeyCode previousSlideKey = KeyCode.LeftArrow;
+
+        [SerializeField]
+        private KeyCode nextSlideKey = KeyCode.RightArrow;
+
+        [SerializeField]
+        private KeyCode restartKey = KeyCode.R;
+
+        [SerializeField]
+        private KeyCode exitKey = KeyCode.Escape;
 
         [Header("Events")]
         [SerializeField]
@@ -60,6 +73,11 @@ namespace SimplePresenter.Slides
         private void Start()
         {
             UpdateNavigation();
+        }
+
+        private void Update()
+        {
+            UpdateKeyNavigation();
         }
 
         #endregion
@@ -96,6 +114,32 @@ namespace SimplePresenter.Slides
             nextButton.onClick.RemoveListener(LoadNext);
             restartButton.onClick.RemoveListener(RestartScene);
             exitButton.onClick.RemoveListener(ExitGame);
+        }
+
+        private void UpdateKeyNavigation()
+        {
+            if (Input.GetKeyDown(previousSlideKey))
+            {
+                LoadPrevious();
+                return;
+            }
+
+            if (Input.GetKeyDown(nextSlideKey))
+            {
+                LoadNext();
+                return;
+            }
+
+            if (Input.GetKeyDown(restartKey))
+            {
+                RestartScene();
+                return;
+            }
+
+            if (Input.GetKeyDown(exitKey) && presentation.IsContainsNextSlide == false)
+            {
+                ExitGame();
+            }
         }
 
         private void OnLoadSlide(Slide oldSlide, Slide newSlide)

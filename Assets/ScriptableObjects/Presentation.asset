@@ -13,15 +13,16 @@ MonoBehaviour:
   m_Name: Presentation
   m_EditorClassIdentifier: 
   slides:
-  - sceneReference: {fileID: 11400000, guid: cb5ae0db33181c844bf0b8ca9178b03f, type: 2}
-    title: Introduction
-    content: {fileID: 5742595565821382026, guid: 7ee1d2c96d2c7794fbc3b2c6dcee42c9, type: 3}
-  - sceneReference: {fileID: 11400000, guid: cb5ae0db33181c844bf0b8ca9178b03f, type: 2}
-    title: Agenda 01
-    content: {fileID: 5742595565821382026, guid: fecd17679e1d48e4a93b2172500f6de7, type: 3}
-  - sceneReference: {fileID: 11400000, guid: cb5ae0db33181c844bf0b8ca9178b03f, type: 2}
-    title: Agenda 02
-    content: {fileID: 5742595565821382026, guid: c6ded93a8c2633547922368f7e74cf7a, type: 3}
-  - sceneReference: {fileID: 11400000, guid: 14e5f35856c5216499a8011e8cee74be, type: 2}
-    title: Singletons
-    content: {fileID: 0}
+  - {fileID: 11400000, guid: ec947bb745dd15f49ad5758b95da0385, type: 2}
+  - {fileID: 11400000, guid: 18f7832daeb0a464d9ebaef56257b84f, type: 2}
+  - {fileID: 11400000, guid: 83b5bec7858e6db4a8ecf5a2706dd54e, type: 2}
+  - {fileID: 11400000, guid: 94a02e92a84b49e4b80709405133f04d, type: 2}
+  - {fileID: 11400000, guid: e0c3a051715d986488df1e6ee541857b, type: 2}
+  - {fileID: 11400000, guid: 1634d5d045b1e2147ad00d75acda5950, type: 2}
+  - {fileID: 11400000, guid: d9d2f0e9620ed374c8fc6c2f222010f7, type: 2}
+  - {fileID: 11400000, guid: 89676da65cc4c6c45ab0dd9bf06643a5, type: 2}
+  - {fileID: 11400000, guid: c2c79dfee23e63744a794a8aad1296c5, type: 2}
+  - {fileID: 11400000, guid: 97769fff878f9ab45a6aadb828060556, type: 2}
+  - {fileID: 11400000, guid: 357e777faae822d4a9b8c0918f833eba, type: 2}
+  - {fileID: 11400000, guid: 7528cedb6e2206e4eb9f8d4bdafc8908, type: 2}
+  - {fileID: 11400000, guid: 7f5fccfa0a96fc6408b7f2c9cc9b19b1, type: 2}

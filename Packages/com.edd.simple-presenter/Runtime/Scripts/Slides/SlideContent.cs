@@ -8,20 +8,41 @@ namespace SimplePresenter.Slides
     /// </summary>
     public sealed class SlideContent : MonoBehaviour
     {
-        #region Editor
+        #region Editor Fields
 
         [Header("Dependencies")]
         [Tooltip("Presentation state")]
         [SerializeField]
         private Presentation presentation;
 
-        [Tooltip("Current slide title")]
+        [Header("Text Objects")]
         [SerializeField]
         private TMP_Text titleText;
 
-        [Tooltip("Current slide content")]
         [SerializeField]
-        private Transform contentTransform;
+        private TMP_Text titleContentText;
+
+        [SerializeField]
+        private TMP_Text textContentText;
+
+        [Header("Content Transforms")]
+        [SerializeField]
+        private Transform placeholderContentTransform;
+
+        [SerializeField]
+        private Transform titleContentTransform;
+
+        [SerializeField]
+        private Transform textContentTransform;
+
+        [SerializeField]
+        private Transform customContentTransform;
+
+        #endregion
+
+        #region Private Fields
+
+        private Transform activeContent;
 
         #endregion
 
@@ -52,8 +73,26 @@ namespace SimplePresenter.Slides
         public void UpdateContent()
         {
             var currentSlide = presentation.CurrentSlide;
-            UpdateTitle(currentSlide.Title);
-            UpdateContent(currentSlide.Content);
+            var slideType = currentSlide.SlideType;
+
+            switch (slideType)
+            {
+                case SlideType.Empty:
+                    SetupEmptySlide();
+                    break;
+                case SlideType.Title:
+                    SetupTitleContentSlide(currentSlide);
+                    break;
+                case SlideType.TextContent:
+                    SetupTextContentSlide(currentSlide);
+                    break;
+                case SlideType.CustomContent:
+                    SetupCustomContentSlide(currentSlide);
+                    break;
+                default:
+                    SetupEmptySlide();
+                    break;
+            }
         }
 
         #endregion
@@ -82,34 +121,63 @@ namespace SimplePresenter.Slides
             }
         }
 
-        private void UpdateTitle(string newTitle)
+
+        private void SetupEmptySlide()
         {
-            titleText.text = newTitle;
+            SetupActiveContent(placeholderContentTransform);
+            titleText.text = string.Empty;
         }
 
-        private void UpdateContent(GameObject newContent)
+        private void SetupTitleContentSlide(Slide currentSlide)
         {
-            ClearContent();
-            if (newContent == false)
+            SetupActiveContent(titleContentTransform);
+            titleText.text = string.Empty;
+            titleContentText.text = currentSlide.Title;
+        }
+
+        private void SetupTextContentSlide(Slide currentSlide)
+        {
+            SetupActiveContent(textContentTransform);
+            titleText.text = currentSlide.Title;
+            textContentText.text = currentSlide.Text;
+        }
+
+        private void SetupCustomContentSlide(Slide currentSlide)
+        {
+            SetupActiveContent(customContentTransform);
+            titleText.text = currentSlide.Title;
+            ClearActiveContent();
+            AddToActiveContent(currentSlide.CustomContent);
+        }
+
+        private void SetupActiveContent(Transform newActiveContent)
+        {
+            if (activeContent != false)
             {
-                return;
+                activeContent.gameObject.SetActive(false);
             }
 
-            SetupContent(newContent);
+            activeContent = newActiveContent;
+            activeContent.gameObject.SetActive(true);
         }
 
-        private void ClearContent()
+        private void ClearActiveContent()
         {
-            for (var index = 0; index < contentTransform.childCount; index++)
+            for (var index = 0; index < activeContent.childCount; index++)
             {
-                var child = contentTransform.GetChild(index);
+                var child = activeContent.GetChild(index);
                 Destroy(child.gameObject);
             }
         }
 
-        private void SetupContent(GameObject newContent)
+        private void AddToActiveContent(GameObject content)
         {
-            Instantiate(newContent, contentTransform);
+            if (content == false)
+            {
+                return;
+            }
+
+            Instantiate(content, activeContent);
         }
 
         #endregion

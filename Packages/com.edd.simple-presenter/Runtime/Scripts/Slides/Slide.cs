@@ -1,4 +1,4 @@
-﻿using System;
+﻿using NaughtyAttributes;
 using SimplePresenter.Scenes;
 using UnityEngine;
 
@@ -7,10 +7,13 @@ namespace SimplePresenter.Slides
     /// <summary>
     /// Holds immutable slide data.
     /// </summary>
-    [Serializable]
-    public sealed class Slide
+    [CreateAssetMenu(
+        fileName = "SceneReference",
+        menuName = "SimplePresenter/Slide"
+    )]
+    public sealed class Slide : ScriptableObject
     {
-        #region Editor
+        #region Editor Fields
 
         [Header("Scene Loading")]
         [Tooltip("Scene required to display this slide")]
@@ -18,13 +21,25 @@ namespace SimplePresenter.Slides
         private SceneReference sceneReference;
 
         [Header("Content")]
+        [SerializeField]
+        private SlideType slideType;
+
+        [HideIf(nameof(slideType), SlideType.Empty)]
+        [TextArea(4, 10)]
         [Tooltip("Slide title text")]
         [SerializeField]
         private string title;
 
+        [ShowIf(nameof(slideType), SlideType.TextContent)]
+        [TextArea(4, 10)]
+        [Tooltip("Slide content text")]
+        [SerializeField]
+        private string text;
+
+        [ShowIf(nameof(slideType), SlideType.CustomContent)]
         [Tooltip("Slide content prefab")]
         [SerializeField]
-        private GameObject content;
+        private GameObject customContent;
 
         #endregion
 
@@ -35,15 +50,22 @@ namespace SimplePresenter.Slides
         /// </summary>
         public SceneReference SceneReference => sceneReference;
 
+        public SlideType SlideType => slideType;
+
         /// <summary>
         /// Title assigned to this slide.
         /// </summary>
         public string Title => title;
 
         /// <summary>
+        /// Slide text.
+        /// </summary>
+        public string Text => text;
+
+        /// <summary>
         /// Content prefab assigned to this slide.
         /// </summary>
-        public GameObject Content => content;
+        public GameObject CustomContent => customContent;
 
         #endregion
     }

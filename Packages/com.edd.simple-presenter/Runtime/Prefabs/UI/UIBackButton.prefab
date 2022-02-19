@@ -37,7 +37,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1818911390320286791, guid: aa36e0cb45afcc3488555ac48bff6c11, type: 3}
       propertyPath: m_fontSize
-      value: 19.65
+      value: 12.5
       objectReference: {fileID: 0}
     - target: {fileID: 1818911390320286791, guid: aa36e0cb45afcc3488555ac48bff6c11, type: 3}
       propertyPath: m_fontStyle
@@ -81,11 +81,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1818911390945145305, guid: aa36e0cb45afcc3488555ac48bff6c11, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 128
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1818911390945145305, guid: aa36e0cb45afcc3488555ac48bff6c11, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 30
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1818911390945145305, guid: aa36e0cb45afcc3488555ac48bff6c11, type: 3}
       propertyPath: m_LocalPosition.x
@@ -134,6 +134,22 @@ PrefabInstance:
     - target: {fileID: 1818911390945145305, guid: aa36e0cb45afcc3488555ac48bff6c11, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2704926158587157373, guid: aa36e0cb45afcc3488555ac48bff6c11, type: 3}
+      propertyPath: m_MinWidth
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2704926158587157373, guid: aa36e0cb45afcc3488555ac48bff6c11, type: 3}
+      propertyPath: m_MinHeight
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2704926158587157373, guid: aa36e0cb45afcc3488555ac48bff6c11, type: 3}
+      propertyPath: m_PreferredWidth
+      value: 64
+      objectReference: {fileID: 0}
+    - target: {fileID: 2704926158587157373, guid: aa36e0cb45afcc3488555ac48bff6c11, type: 3}
+      propertyPath: m_PreferredHeight
+      value: 32
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: aa36e0cb45afcc3488555ac48bff6c11, type: 3}

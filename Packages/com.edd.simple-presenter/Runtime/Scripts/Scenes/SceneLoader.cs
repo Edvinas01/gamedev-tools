@@ -11,7 +11,7 @@ namespace SimplePresenter.Scenes
     /// </summary>
     public sealed class SceneLoader : MonoBehaviour
     {
-        #region Editor
+        #region Editor Fields
 
         [Header("Dependencies")]
         [Tooltip("Transition handle used to transition (e.g., smoothly fade) between scenes")]

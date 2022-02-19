@@ -13,7 +13,7 @@ namespace SimplePresenter.Slides
     )]
     public sealed class Presentation : ScriptableObject
     {
-        #region Editor
+        #region Editor Fields
 
         [Tooltip("List of slides in this presentation (in order)")]
         [SerializeField]

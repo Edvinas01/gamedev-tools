@@ -4,7 +4,8 @@
     "references": [
         "SimplePresenter.Runtime",
         "Chark.ScriptableEvents",
-        "Chark.ScriptableEvents.Editor"
+        "Chark.ScriptableEvents.Editor",
+        "NaughtyAttributes.Editor"
     ],
     "includePlatforms": [
         "Editor"

@@ -13,7 +13,7 @@ namespace SimplePresenter.Editor.Scenes
     [EditorSettingsPath("Assets/Settings/Editor/EditorSceneSettings")]
     internal class EditorSceneSettings : BaseEditorSettings<EditorSceneSettings>
     {
-        #region Editor
+        #region Editor Fields
 
         [Tooltip("Scene used as a setup scene")]
         [SerializeField]
