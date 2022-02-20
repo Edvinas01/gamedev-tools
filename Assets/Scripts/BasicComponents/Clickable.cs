@@ -1,9 +1,11 @@
+using GamedevTools.Common;
+using GamedevTools.Singletons;
 using UnityEngine;
 
 namespace GamedevTools.BasicComponents
 {
     [AddComponentMenu("Gamedev Tools/Basic Components/Clickable")]
-    public class Clickable : MonoBehaviour
+    public class Clickable : MonoBehaviour, IClickable
     {
         #region Editor Fields
 
@@ -15,9 +17,6 @@ namespace GamedevTools.BasicComponents
 
         #region Public Methods
 
-        /// <summary>
-        /// Click this clickable.
-        /// </summary>
         public void OnClick(int clickDamage)
         {
             destructible.ApplyDamage(clickDamage);

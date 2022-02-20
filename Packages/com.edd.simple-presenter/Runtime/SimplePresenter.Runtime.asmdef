@@ -2,7 +2,6 @@
     "name": "SimplePresenter.Runtime",
     "rootNamespace": "SimplePresenter",
     "references": [
-        "Chark.ScriptableEvents",
         "NaughtyAttributes.Core",
         "Unity.TextMeshPro"
     ],

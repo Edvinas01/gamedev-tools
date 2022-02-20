@@ -1,6 +1,5 @@
 ﻿using SimplePresenter.Scenes;
 using UnityEngine;
-using UnityEngine.Events;
 using UnityEngine.UI;
 
 namespace SimplePresenter.Slides
@@ -16,6 +15,9 @@ namespace SimplePresenter.Slides
         [Tooltip("Presentation state")]
         [SerializeField]
         private Presentation presentation;
+
+        [SerializeField]
+        private SceneLoader sceneLoader;
 
         [Tooltip("Button to load the previous slide (or scene)")]
         [SerializeField]
@@ -45,16 +47,6 @@ namespace SimplePresenter.Slides
 
         [SerializeField]
         private KeyCode exitKey = KeyCode.Escape;
-
-        [Header("Events")]
-        [SerializeField]
-        private UnityEvent<SceneReference> onLoadScene;
-
-        [SerializeField]
-        private UnityEvent onRestart;
-
-        [SerializeField]
-        private UnityEvent onExit;
 
         #endregion
 
@@ -149,7 +141,7 @@ namespace SimplePresenter.Slides
 
             if (oldScene != newScene && newScene != null)
             {
-                onLoadScene.Invoke(newScene);
+                sceneLoader.LoadScene(newScene);
             }
             else
             {
@@ -160,22 +152,37 @@ namespace SimplePresenter.Slides
 
         private void LoadPrevious()
         {
+            if (sceneLoader.IsLoadingScene)
+            {
+                return;
+            }
+
             presentation.LoadPreviousSlide();
         }
 
         private void LoadNext()
         {
+            if (sceneLoader.IsLoadingScene)
+            {
+                return;
+            }
+
             presentation.LoadNextSlide();
         }
 
         private void RestartScene()
         {
-            onRestart.Invoke();
+            if (sceneLoader.IsLoadingScene)
+            {
+                return;
+            }
+
+            sceneLoader.RestartScene();
         }
 
         private void ExitGame()
         {
-            onExit.Invoke();
+            sceneLoader.ExitGame();
         }
 
         #endregion

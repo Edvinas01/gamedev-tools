@@ -28,9 +28,12 @@ namespace SimplePresenter.Scenes
 
         #endregion
 
-        #region Private Fields
+        #region Public Properties
 
-        private bool isLoadingScene;
+        /// <summary>
+        /// Is a scene currently being loaded?
+        /// </summary>
+        public bool IsLoadingScene { get; private set; }
 
         #endregion
 
@@ -147,7 +150,7 @@ namespace SimplePresenter.Scenes
 
         private void StartLoadScene(int sceneIndex)
         {
-            if (isLoadingScene)
+            if (IsLoadingScene)
             {
                 return;
             }
@@ -157,7 +160,7 @@ namespace SimplePresenter.Scenes
 
         private IEnumerator LoadScene(int sceneIndex)
         {
-            isLoadingScene = true;
+            IsLoadingScene = true;
 
             var activeScene = SceneManager.GetActiveScene();
 
@@ -181,7 +184,7 @@ namespace SimplePresenter.Scenes
 
             yield return FadeInScene();
 
-            isLoadingScene = false;
+            IsLoadingScene = false;
         }
 
         private IEnumerator FadeInScene()

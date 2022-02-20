@@ -36,7 +36,7 @@ namespace GamedevTools.CsharpEvents
 
         #region Unity Lifecycle
 
-        private void OnEnable()
+        private void Awake()
         {
             var clickable = GetComponent<Clickable>();
             if (clickable)
@@ -49,9 +49,6 @@ namespace GamedevTools.CsharpEvents
 
         #region Private Methods
 
-        /// <summary>
-        /// Apply damage to this destructible and destroy it if necessary.
-        /// </summary>
         private void ApplyDamage(int damage)
         {
             if (damage < 0)

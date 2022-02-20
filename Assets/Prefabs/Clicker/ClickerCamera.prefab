@@ -1,0 +1,88 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &4588730552760400670
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2805313726169628866, guid: 0aaf68fbe95f4094e8728e9817c0de3c, type: 3}
+      propertyPath: m_Name
+      value: ClickerCamera
+      objectReference: {fileID: 0}
+    - target: {fileID: 2805313726169628869, guid: 0aaf68fbe95f4094e8728e9817c0de3c, type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2805313726169628869, guid: 0aaf68fbe95f4094e8728e9817c0de3c, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2805313726169628869, guid: 0aaf68fbe95f4094e8728e9817c0de3c, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2805313726169628869, guid: 0aaf68fbe95f4094e8728e9817c0de3c, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2805313726169628869, guid: 0aaf68fbe95f4094e8728e9817c0de3c, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2805313726169628869, guid: 0aaf68fbe95f4094e8728e9817c0de3c, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2805313726169628869, guid: 0aaf68fbe95f4094e8728e9817c0de3c, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2805313726169628869, guid: 0aaf68fbe95f4094e8728e9817c0de3c, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2805313726169628869, guid: 0aaf68fbe95f4094e8728e9817c0de3c, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2805313726169628869, guid: 0aaf68fbe95f4094e8728e9817c0de3c, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2805313726169628869, guid: 0aaf68fbe95f4094e8728e9817c0de3c, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 0aaf68fbe95f4094e8728e9817c0de3c, type: 3}
+--- !u!1 &1819467274560322524 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2805313726169628866, guid: 0aaf68fbe95f4094e8728e9817c0de3c, type: 3}
+  m_PrefabInstance: {fileID: 4588730552760400670}
+  m_PrefabAsset: {fileID: 0}
+--- !u!20 &1819467274560322522 stripped
+Camera:
+  m_CorrespondingSourceObject: {fileID: 2805313726169628868, guid: 0aaf68fbe95f4094e8728e9817c0de3c, type: 3}
+  m_PrefabInstance: {fileID: 4588730552760400670}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &5419571294771592611
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1819467274560322524}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00b62ae6fb8f4457a014b3b55fcd4f36, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mainCamera: {fileID: 1819467274560322522}
+  raycastLayerMask:
+    serializedVersion: 2
+    m_Bits: 64
+  raycastDistance: 100
+  clickDamage: 1
+  clickButton: Fire1

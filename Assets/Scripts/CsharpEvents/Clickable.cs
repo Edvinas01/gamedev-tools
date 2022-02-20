@@ -1,10 +1,11 @@
 using System;
+using GamedevTools.Common;
 using UnityEngine;
 
 namespace GamedevTools.CsharpEvents
 {
     [AddComponentMenu("Gamedev Tools/CSharp Events/Clickable")]
-    public class Clickable : MonoBehaviour
+    public class Clickable : MonoBehaviour, IClickable
     {
         #region Public Properties
 
@@ -17,9 +18,6 @@ namespace GamedevTools.CsharpEvents
 
         #region Public Methods
 
-        /// <summary>
-        /// Click this clickable.
-        /// </summary>
         public void OnClick(int clickDamage)
         {
             OnClicked?.Invoke(clickDamage);

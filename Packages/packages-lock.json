@@ -1,12 +1,5 @@
 {
   "dependencies": {
-    "com.chark.scriptable-events": {
-      "version": "https://github.com/chark/scriptable-events.git#upm",
-      "depth": 0,
-      "source": "git",
-      "dependencies": {},
-      "hash": "1b29bdc6a90d5a25480e3e92a4efe1d4cf48aa2c"
-    },
     "com.dbrizov.naughtyattributes": {
       "version": "https://github.com/dbrizov/NaughtyAttributes.git#upm",
       "depth": 0,

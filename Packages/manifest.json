@@ -1,6 +1,5 @@
 {
   "dependencies": {
-    "com.chark.scriptable-events": "https://github.com/chark/scriptable-events.git#upm",
     "com.dbrizov.naughtyattributes": "https://github.com/dbrizov/NaughtyAttributes.git#upm",
     "com.unity.collab-proxy": "1.15.4",
     "com.unity.ide.rider": "2.0.7",

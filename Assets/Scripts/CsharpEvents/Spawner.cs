@@ -32,12 +32,9 @@ namespace GamedevTools.CsharpEvents
 
         #endregion
 
-        #region Public Methods
+        #region Private Methods
 
-        /// <summary>
-        /// Spawn a new clickable.
-        /// </summary>
-        public void Spawn()
+        private void Spawn()
         {
             var clickable = CreateClickable();
             SetupScale(clickable);
@@ -57,10 +54,6 @@ namespace GamedevTools.CsharpEvents
 
             SetupDestructible(clickable);
         }
-
-        #endregion
-
-        #region Private Methods
 
         private GameObject CreateClickable()
         {

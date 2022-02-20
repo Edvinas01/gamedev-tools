@@ -20,4 +20,16 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/SlideScene_Day_Clicker_BasicComponents.unity
     guid: 6821523e53d818e46b4088ace562eb3e
+  - enabled: 1
+    path: Assets/Scenes/SlideScene_Day_Clicker_CSharpEvents.unity
+    guid: d2f35e2401f06e842a67f2e276851f8f
+  - enabled: 1
+    path: Assets/Scenes/SlideScene_Day_Clicker_SingletonVsUnityEvents.unity
+    guid: 078a4ddea62d6b74d8727a9eab20a6b9
+  - enabled: 1
+    path: Assets/Scenes/SlideScene_Night_BouncyBox.unity
+    guid: b12b6a2dbdc6c4c4e8e1aa08222dfd48
+  - enabled: 1
+    path: Assets/Scenes/SlideScene_Day_Clicker_ScriptableEvents.unity
+    guid: 037434c28ec7c614183195719b8d2606
   m_configObjects: {}

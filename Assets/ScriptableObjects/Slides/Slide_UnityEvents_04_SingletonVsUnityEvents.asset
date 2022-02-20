@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4ffea83e109454fbae368d53777ad87, type: 3}
+  m_Name: Slide_UnityEvents_04_SingletonVsUnityEvents
+  m_EditorClassIdentifier: 
+  sceneReference: {fileID: 11400000, guid: 4230d560fdc38e847b1eeb138cbc7ccf, type: 2}
+  slideType: 0
+  title: Unity Components - Piece by Piece
+  text: "\u2022 Each component does one thing\n\u2022 Components can combine\n\u2022
+    Multiple variations"
+  customContent: {fileID: 0}

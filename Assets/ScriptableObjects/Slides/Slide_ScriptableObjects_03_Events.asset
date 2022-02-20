@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4ffea83e109454fbae368d53777ad87, type: 3}
+  m_Name: Slide_ScriptableObjects_03_Events
+  m_EditorClassIdentifier: 
+  sceneReference: {fileID: 11400000, guid: 0263b61742e78dc4c913cfda63fab459, type: 2}
+  slideType: 2
+  title: Scriptable Objects - Events
+  text: '- Scriptable Objects can be used to implement a robust <style="highlight">event
+    system</style>
+
+    - We can do so by storing a list of listeners in Scriptable
+    Objects
+
+    - Since Scriptable objects are assets, we can eliminate scene references
+    in <style="highlight">prefabs</style>
+
+    - For an in-depth look see <style="link">Unite
+    Austin 2017 - Game Architecture with Scriptable Objects</style> by <style="link">Ryan
+    Hipple</style>'
+  customContent: {fileID: 3857851495989387928, guid: c2a513d2af9683c47a18fbde89d14720, type: 3}

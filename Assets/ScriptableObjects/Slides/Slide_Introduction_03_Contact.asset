@@ -15,6 +15,9 @@ MonoBehaviour:
   sceneReference: {fileID: 11400000, guid: 0263b61742e78dc4c913cfda63fab459, type: 2}
   slideType: 2
   title: Introduction
-  text: "\u2022 Edvinas Danevi\u010Dius\n\u2022 Discord <style=\"link\">Edd#4745</style>\n\u2022
-    <style=\"link\">edvinas.danevicius@gmail.com</style>"
+  text: '- Edvinas
+
+    - Discord <style="link">Edd#4745</style>
+
+    - <style="link">edvinas.danevicius@gmail.com</style>'
   customContent: {fileID: 6698777060191893851, guid: 89bc5a6bce6437840b03bfed86be7675, type: 3}

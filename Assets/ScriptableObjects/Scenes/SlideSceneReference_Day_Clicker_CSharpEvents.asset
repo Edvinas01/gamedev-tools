@@ -12,4 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8ae418c8c91e343469ac858c96e8ca3a, type: 3}
   m_Name: SlideSceneReference_Day_Clicker_CSharpEvents
   m_EditorClassIdentifier: 
-  sceneBuildIndex: 4
+  sceneBuildIndex: 5

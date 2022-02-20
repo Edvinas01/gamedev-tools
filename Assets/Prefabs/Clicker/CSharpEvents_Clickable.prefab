@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 211185235423009685}
   - component: {fileID: 5915786867981117668}
   - component: {fileID: -4206002208845676778}
+  - component: {fileID: -1203151714560899388}
   m_Layer: 6
   m_Name: CSharpEvents_Clickable
   m_TagString: Untagged
@@ -140,3 +141,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 1
+--- !u!114 &-1203151714560899388
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2393450874258744251}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a4de880d8fb64ccea5d3d864809c95fb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  yOffset: 0.5
+  destroyParticles: {fileID: 3006335012035667226, guid: 496d08dad46ad2b449744eb31f1d8fcc, type: 3}

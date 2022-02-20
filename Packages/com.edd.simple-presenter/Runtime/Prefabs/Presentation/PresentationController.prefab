@@ -67,8 +67,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Title text...
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: bb8c36d7893425844bd608764863e8e4, type: 2}
+  m_sharedMaterial: {fileID: -2620444848923945269, guid: bb8c36d7893425844bd608764863e8e4, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -92,7 +92,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 57.25
+  m_fontSize: 35.8
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -267,7 +267,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: Title text...
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: bb8c36d7893425844bd608764863e8e4, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -331,7 +331,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
+  m_hasFontAssetChanged: 1
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!1 &1390982248225021092
@@ -524,55 +524,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   presentation: {fileID: 11400000, guid: 4f3070ef5710f054bb1b48d015696f77, type: 2}
+  sceneLoader: {fileID: 4725910429992220136}
   backButton: {fileID: 1315195497285089637}
   nextButton: {fileID: 1315195498419579852}
   restartButton: {fileID: 4452135439259708351}
   exitButton: {fileID: 5223768945233941669}
-  onLoadScene:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 4725910429992220136}
-        m_TargetAssemblyTypeName: SimplePresenter.Scenes.SceneLoader, SimplePresenter.Runtime
-        m_MethodName: LoadScene
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-  onRestart:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 4725910429992220136}
-        m_TargetAssemblyTypeName: SimplePresenter.Scenes.SceneLoader, SimplePresenter.Runtime
-        m_MethodName: RestartScene
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-  onExit:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 4725910429992220136}
-        m_TargetAssemblyTypeName: SimplePresenter.Scenes.SceneLoader, SimplePresenter.Runtime
-        m_MethodName: ExitGame
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+  previousSlideKey: 276
+  nextSlideKey: 275
+  restartKey: 114
+  exitKey: 27
 --- !u!114 &4350002407750392850
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -728,9 +688,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_IgnoreLayout: 0
   m_MinWidth: -1
-  m_MinHeight: 64
+  m_MinHeight: 42
   m_PreferredWidth: -1
-  m_PreferredHeight: 64
+  m_PreferredHeight: 42
   m_FlexibleWidth: -1
   m_FlexibleHeight: -1
   m_LayoutPriority: 1
@@ -885,7 +845,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: Title text...
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: bb8c36d7893425844bd608764863e8e4, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -949,7 +909,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
+  m_hasFontAssetChanged: 1
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!1 &4626419694573466672

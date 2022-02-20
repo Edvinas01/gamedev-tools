@@ -15,6 +15,7 @@ MonoBehaviour:
   sceneReference: {fileID: 11400000, guid: 0263b61742e78dc4c913cfda63fab459, type: 2}
   slideType: 2
   title: Introduction
-  text: "\u2022 Software Engineer at <style=\"highlight\">Unity</style>\n\u2022 Student
-    internships"
+  text: '- Software Engineer at <style="highlight">Unity</style>
+
+    - Student internships'
   customContent: {fileID: 307756876539126162, guid: 7ddcaa51a018f8f48bfee7a77ccdad89, type: 3}

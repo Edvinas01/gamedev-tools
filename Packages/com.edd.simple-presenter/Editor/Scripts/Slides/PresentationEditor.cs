@@ -63,6 +63,7 @@ namespace SimplePresenter.Editor.Slides
             EditorGUILayout.BeginVertical();
 
             var isGuiEnabled = GUI.enabled;
+            var currentSlide = presentation.CurrentSlide;
 
             EditorGUI.indentLevel++;
             foreach (var slide in presentation.Slides)
@@ -73,10 +74,13 @@ namespace SimplePresenter.Editor.Slides
                 EditorGUILayout.ObjectField(slide, typeof(Slide), false);
                 GUI.enabled = isGuiEnabled;
 
+                GUI.enabled = currentSlide != slide;
                 if (GUILayout.Button("Load"))
                 {
                     presentation.LoadSlide(slide);
                 }
+
+                GUI.enabled = isGuiEnabled;
 
                 EditorGUILayout.EndHorizontal();
             }
