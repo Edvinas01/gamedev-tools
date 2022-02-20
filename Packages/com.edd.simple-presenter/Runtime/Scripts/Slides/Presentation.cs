@@ -35,6 +35,11 @@ namespace SimplePresenter.Slides
         public int SlideCount => slides.Count;
 
         /// <summary>
+        /// List of available slides.
+        /// </summary>
+        public IReadOnlyList<Slide> Slides => slides;
+
+        /// <summary>
         /// Currently active slide, can be <c>null</c>!
         /// </summary>
         public Slide CurrentSlide
@@ -108,16 +113,11 @@ namespace SimplePresenter.Slides
         #region Public Methods
 
         /// <summary>
-        /// Load slide at given <paramref name="index"/>.
+        /// Load  given slide.
         /// </summary>
-        public void LoadSlide(int index)
+        public void LoadSlide(Slide slide)
         {
-            if (index >= slides.Count)
-            {
-                return;
-            }
-
-            CurrentSlide = slides[index];
+            CurrentSlide = slide;
         }
 
         /// <summary>

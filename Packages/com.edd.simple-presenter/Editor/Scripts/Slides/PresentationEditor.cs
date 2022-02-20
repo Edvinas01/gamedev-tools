@@ -1,5 +1,4 @@
-﻿using System;
-using SimplePresenter.Slides;
+﻿using SimplePresenter.Slides;
 using UnityEditor;
 using UnityEngine;
 
@@ -15,7 +14,6 @@ namespace SimplePresenter.Editor.Slides
         #region Private Fields
 
         private Presentation presentation;
-        private int slideIndex;
 
         #endregion
 
@@ -61,18 +59,31 @@ namespace SimplePresenter.Editor.Slides
 
         private void DrawLoadSlide()
         {
-            EditorGUILayout.BeginHorizontal();
+            EditorGUILayout.LabelField("Load Slides", EditorStyles.boldLabel);
+            EditorGUILayout.BeginVertical();
 
-            slideIndex = EditorGUILayout.IntField(slideIndex);
-            slideIndex = Math.Max(0, slideIndex);
-            slideIndex = Math.Min(slideIndex, presentation.SlideCount - 1);
+            var isGuiEnabled = GUI.enabled;
 
-            if (GUILayout.Button("Load Slide"))
+            EditorGUI.indentLevel++;
+            foreach (var slide in presentation.Slides)
             {
-                presentation.LoadSlide(slideIndex);
+                EditorGUILayout.BeginHorizontal();
+
+                GUI.enabled = false;
+                EditorGUILayout.ObjectField(slide, typeof(Slide), false);
+                GUI.enabled = isGuiEnabled;
+
+                if (GUILayout.Button("Load"))
+                {
+                    presentation.LoadSlide(slide);
+                }
+
+                EditorGUILayout.EndHorizontal();
             }
 
-            EditorGUILayout.EndHorizontal();
+            EditorGUI.indentLevel--;
+
+            EditorGUILayout.EndVertical();
         }
 
         #endregion
