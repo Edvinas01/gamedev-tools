@@ -1,9 +1,9 @@
 ﻿using GamedevTools.Common;
 using UnityEngine;
 
-namespace GamedevTools.BasicComponents
+namespace GamedevTools.CsharpEvents
 {
-    [AddComponentMenu("Gamedev Tools/Basic Components/Spawner")]
+    [AddComponentMenu("Gamedev Tools/CSharp Events/Spawner")]
     public class Spawner : MonoBehaviour
     {
         #region Editor Fields
@@ -112,7 +112,7 @@ namespace GamedevTools.BasicComponents
             var destructible = clickable.GetComponent<Destructible>();
             if (destructible)
             {
-                destructible.Spawner = this;
+                destructible.OnDestroyed += Spawn;
             }
         }
 

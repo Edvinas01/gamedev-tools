@@ -8,7 +8,7 @@ namespace SimplePresenter.Scenes
     /// </summary>
     [CreateAssetMenu(
         fileName = "SceneReference",
-        menuName = "SimplePresenter/Scene Reference"
+        menuName = "Simple Presenter/Scene Reference"
     )]
     public sealed class SceneReference : ScriptableObject
     {

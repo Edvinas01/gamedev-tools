@@ -9,7 +9,7 @@ namespace SimplePresenter.Slides
     /// </summary>
     [CreateAssetMenu(
         fileName = "Presentation",
-        menuName = "SimplePresenter/Presentation"
+        menuName = "Simple Presenter/Presentation"
     )]
     public sealed class Presentation : ScriptableObject
     {

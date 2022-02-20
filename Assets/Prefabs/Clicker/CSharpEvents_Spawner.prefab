@@ -39,9 +39,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8789383823916875924}
-  - component: {fileID: 8789383823916875925}
+  - component: {fileID: 8463900766616684104}
   m_Layer: 0
-  m_Name: BasicComponents_Spawner
+  m_Name: CSharpEvents_Spawner
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -62,7 +62,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &8789383823916875925
+--- !u!114 &8463900766616684104
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -71,9 +71,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 8789383823916875927}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d3f620cbadf444899d112418c6646670, type: 3}
+  m_Script: {fileID: 11500000, guid: 1b0282660da0498eb8729874cf8d7f56, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   spawnerSettings: {fileID: 11400000, guid: 9a789760b8b9ff34e804736c56ead378, type: 2}
-  templatePrefab: {fileID: 2393450874258744251, guid: 31648f519ef785e43be75e9d5bdc24be, type: 3}
+  templatePrefab: {fileID: 2393450874258744251, guid: cf6e8856612350e40879d58fb0f45920, type: 3}
   spawnPoint: {fileID: 469497313}
