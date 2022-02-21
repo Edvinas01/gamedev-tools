@@ -14,10 +14,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sceneReference: {fileID: 11400000, guid: 0263b61742e78dc4c913cfda63fab459, type: 2}
   slideType: 2
-  title: About - Who?
+  title: Who?
   text: 'Edvinas
 
-    Discord <style="link">Edd#4745</style>
+    Software Engineer at <style="highlight">Unity</style>
+
+    Discord
+    <style="link">Edd#4745</style>
 
     <style="link">edvinas.danevicius@gmail.com</style>'
   customContent: {fileID: 6698777060191893851, guid: 89bc5a6bce6437840b03bfed86be7675, type: 3}

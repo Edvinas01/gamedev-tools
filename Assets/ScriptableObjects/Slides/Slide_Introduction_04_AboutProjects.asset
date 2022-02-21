@@ -14,6 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sceneReference: {fileID: 11400000, guid: 0263b61742e78dc4c913cfda63fab459, type: 2}
   slideType: 3
-  title: About - cool projects!
+  title: Checkout Some Cool Projects
   text: 
   customContent: {fileID: 3380100364615639742, guid: f3227fa01c205ae41ab6748cb6fb9119, type: 3}
