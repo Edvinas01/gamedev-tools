@@ -470,12 +470,12 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: '- Listen to inner state changes
+  m_text: 'Listen to inner state changes
 
-    - More flexibility due to <style="highlight">separation</style>
+    More flexibility due to <style="highlight">separation</style>
 
-    -
-    Don''t need to know the caller'
+    Don''t
+    need to know the caller'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: bb8c36d7893425844bd608764863e8e4, type: 2}
   m_sharedMaterial: {fileID: -2620444848923945269, guid: bb8c36d7893425844bd608764863e8e4, type: 2}

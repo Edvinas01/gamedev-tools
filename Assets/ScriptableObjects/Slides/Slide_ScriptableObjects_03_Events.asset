@@ -15,16 +15,10 @@ MonoBehaviour:
   sceneReference: {fileID: 11400000, guid: 0263b61742e78dc4c913cfda63fab459, type: 2}
   slideType: 2
   title: Scriptable Objects - Events
-  text: '- Scriptable Objects can be used to implement a robust <style="highlight">event
-    system</style>
-
-    - We can do so by storing a list of listeners in Scriptable
-    Objects
-
-    - Since Scriptable objects are assets, we can eliminate scene references
-    in <style="highlight">prefabs</style>
-
-    - For an in-depth look see <style="link">Unite
-    Austin 2017 - Game Architecture with Scriptable Objects</style> by <style="link">Ryan
-    Hipple</style>'
+  text: "<b>Scriptable Objects can be used to implement a robust <style=\"highlight\">event
+    system</style></b>\n  Store a list of listener components in Scriptable Objects\n 
+    Iterate that list and trigger each listener\n\nKeep in mind, Scriptable Objects
+    are assets, which means that we can eliminate scene references in <style=\"highlight\">prefabs</style>\n\nFor
+    an in-depth look see <style=\"link\">Unite Austin 2017 - Game Architecture with
+    Scriptable Objects</style> by <style=\"link\">Ryan Hipple</style>"
   customContent: {fileID: 3857851495989387928, guid: c2a513d2af9683c47a18fbde89d14720, type: 3}

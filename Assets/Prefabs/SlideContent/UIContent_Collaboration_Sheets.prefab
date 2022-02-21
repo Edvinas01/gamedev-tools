@@ -140,17 +140,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: '- A useful tool - sheets
-
-    - Turn everything into a <style="highlight">prefab</style>
-
-    -
-    Track asset usage
-
-    - Reduce <style="highlight">Git conflicts</style>
-
-    -
-    Helps with documentation'
+  m_text: "<b>Useful tool - sheets</b>\n  Turn everything into a <style=\"highlight\">prefab</style>\n 
+    Track asset usage\n  Reduce <style=\"highlight\">Git conflicts</style>\n  Helps
+    with documentation"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: bb8c36d7893425844bd608764863e8e4, type: 2}
   m_sharedMaterial: {fileID: -2620444848923945269, guid: bb8c36d7893425844bd608764863e8e4, type: 2}

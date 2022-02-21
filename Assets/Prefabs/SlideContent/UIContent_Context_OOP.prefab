@@ -65,12 +65,12 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: '- Different behaviour in each subtype
+  m_text: 'Different behaviour in each subtype
 
-    - Simple to understand
+    Simple to understand
 
-    -
-    <style="highlight">Diamond problem</style>'
+    <style="highlight">Diamond
+    problem</style>'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: bb8c36d7893425844bd608764863e8e4, type: 2}
   m_sharedMaterial: {fileID: -2620444848923945269, guid: bb8c36d7893425844bd608764863e8e4, type: 2}

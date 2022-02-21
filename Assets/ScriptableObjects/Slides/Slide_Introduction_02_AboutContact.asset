@@ -10,10 +10,14 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f4ffea83e109454fbae368d53777ad87, type: 3}
-  m_Name: Slide_Introduction_05_AboutProjects
+  m_Name: Slide_Introduction_02_AboutContact
   m_EditorClassIdentifier: 
   sceneReference: {fileID: 11400000, guid: 0263b61742e78dc4c913cfda63fab459, type: 2}
-  slideType: 3
-  title: Introduction
-  text: 
-  customContent: {fileID: 3380100364615639742, guid: f3227fa01c205ae41ab6748cb6fb9119, type: 3}
+  slideType: 2
+  title: About - Who?
+  text: 'Edvinas
+
+    Discord <style="link">Edd#4745</style>
+
+    <style="link">edvinas.danevicius@gmail.com</style>'
+  customContent: {fileID: 6698777060191893851, guid: 89bc5a6bce6437840b03bfed86be7675, type: 3}

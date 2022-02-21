@@ -65,9 +65,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: '- Entity usually has an ID
+  m_text: 'Entity usually has an ID
 
-    - Systems can talk to each other'
+    Systems can talk to each other'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: bb8c36d7893425844bd608764863e8e4, type: 2}
   m_sharedMaterial: {fileID: -2620444848923945269, guid: bb8c36d7893425844bd608764863e8e4, type: 2}
@@ -276,15 +276,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: '- ECS - Entity Component System
-
-    - <style="highlight">Entity</style>
-    - stores a list of components
-
-    - <style="highlight">Component</style> - stores
-    data
-
-    - <style="highlight">System</style> - performs logic'
+  m_text: "<b>ECS - Entity Component System</b>\n  <style=\"highlight\">Entity</style>
+    - stores a list of components\n  <style=\"highlight\">Component</style> - stores
+    data\n  <style=\"highlight\">System</style> - performs logic"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: bb8c36d7893425844bd608764863e8e4, type: 2}
   m_sharedMaterial: {fileID: -2620444848923945269, guid: bb8c36d7893425844bd608764863e8e4, type: 2}

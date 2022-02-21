@@ -149,17 +149,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: '- Why not just use singletons?
-
-    - Singletons are useful for <style="highlight">global</style>
-    state
-
-    - However, they create hard dependencies
-
-    - Much harder to iterate
-    and prototype
-
-'
+  m_text: "<b>Why not just use singletons?</b>\n  Singletons are useful for <style=\"highlight\">global</style>
+    state\n  However, they create hard dependencies\n  Much harder to iterate and
+    prototype\n"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: bb8c36d7893425844bd608764863e8e4, type: 2}
   m_sharedMaterial: {fileID: -2620444848923945269, guid: bb8c36d7893425844bd608764863e8e4, type: 2}
@@ -186,7 +178,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 39.5
+  m_fontSize: 58.65
   m_fontSizeBase: 20
   m_fontWeight: 400
   m_enableAutoSizing: 1

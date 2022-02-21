@@ -1,3 +1,4 @@
+using System.Linq;
 using NaughtyAttributes;
 using UnityEngine;
 using UnityEngine.Serialization;
@@ -13,6 +14,16 @@ namespace GamedevTools.Common
         [Tooltip("Camera which performs the clicks")]
         [SerializeField]
         private Camera mainCamera;
+
+        [Header("Pointer")]
+        [Tooltip("Arrow used to indicate currently selected object")]
+        [SerializeField]
+        private GameObject selectionPointerPrefab;
+
+        [Min(0f)]
+        [Tooltip("Offset on Y coordinate for the selection pointer")]
+        [SerializeField]
+        private float pointerYOffset = 1.5f;
 
         [Header("Raycast")]
         [Tooltip("Click layer (only objects on this layer will be clicked)")]
@@ -41,6 +52,31 @@ namespace GamedevTools.Common
         [InputAxis]
         [SerializeField]
         private string infoClickButton = "Fire2";
+
+        #endregion
+
+        #region Private Fields
+
+        private GameObject selectionArrow;
+
+        #endregion
+
+        #region Private Properties
+
+        private GameObject SelectionPointer
+        {
+            get
+            {
+                if (selectionArrow)
+                {
+                    return selectionArrow;
+                }
+
+                selectionArrow = Instantiate(selectionPointerPrefab);
+
+                return selectionArrow;
+            }
+        }
 
         #endregion
 
@@ -85,13 +121,18 @@ namespace GamedevTools.Common
         private void UpdateInfo()
         {
 #if UNITY_EDITOR
-            if (TryRaycastClickable(out var clickable) && clickable is Object clickableObject)
+            if (TryRaycastClickable(out var clickable) && clickable is Component component)
             {
-                UnityEditor.Selection.activeObject = clickableObject;
+                ShowPointer(component);
+                UnityEditor.Selection.activeObject = component;
+            }
+            else
+            {
+                HidePointer();
+                UnityEditor.Selection.activeObject = null;
             }
 #endif
         }
-
 
         private bool TryRaycastClickable(out IClickable clickable)
         {
@@ -130,6 +171,43 @@ namespace GamedevTools.Common
         private static IClickable GetClickable(RaycastHit hit)
         {
             return hit.collider.GetComponentInParent<IClickable>();
+        }
+
+        private void ShowPointer(Component destination)
+        {
+            var destinationTransform = destination.transform;
+            var destinationPosition = destinationTransform.position;
+
+            var pointer = SelectionPointer;
+            var pointerTransform = pointer.transform;
+            var pointerPosition = destinationPosition;
+
+            pointerPosition.y += GetYOffset(destination);
+
+            pointerTransform.position = pointerPosition;
+            pointerTransform.parent = destinationTransform;
+
+            pointer.SetActive(true);
+        }
+
+        private void HidePointer()
+        {
+            SelectionPointer.SetActive(false);
+        }
+
+        private float GetYOffset(Component component)
+        {
+            var maxY = component
+                .GetComponentsInChildren<Collider>()
+                .Max(componentCollider =>
+                {
+                    var bounds = componentCollider.bounds;
+                    var extents = bounds.extents;
+
+                    return extents.y;
+                });
+
+            return maxY + pointerYOffset;
         }
 
         #endregion

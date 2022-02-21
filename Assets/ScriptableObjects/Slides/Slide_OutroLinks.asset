@@ -10,16 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f4ffea83e109454fbae368d53777ad87, type: 3}
-  m_Name: Slide_Outro
+  m_Name: Slide_OutroLinks
   m_EditorClassIdentifier: 
   sceneReference: {fileID: 11400000, guid: 4fe26347d42e34e4aaf0f334d4de0216, type: 2}
   slideType: 2
   title: Links
-  text: '- Presentation <style="link">github.com/Edvinas01/gamedev-tools</style>
-
-    -
-    Event library <style="link">github.com/chark/scriptable-events</style>
-
-    -
-    Talk by Ryan Hipple <style="link">youtu.be/raQ3iHhE_Kk</style>'
+  text: "<b>Source Code</b>\n  <style=\"link\">github.com/Edvinas01/gamedev-tools</style>\n\n<b>More
+    info</b>\n  Event library <style=\"link\">github.com/chark/scriptable-events</style>\n 
+    Talk by Ryan Hipple <style=\"link\">youtu.be/raQ3iHhE_Kk</style>"
   customContent: {fileID: 3857851495989387928, guid: c2a513d2af9683c47a18fbde89d14720, type: 3}

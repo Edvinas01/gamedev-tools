@@ -343,16 +343,10 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: '- Scriptable Objects are <style="highlight">assets</style> which hold
-    data
-
-    - They can be referenced and modified at runtime
-
-    - It is also
-    possible to execute logic
-
-    - Asset means no scene reference - enables <style="highlight">isolated
-    prefabs</style>'
+  m_text: "<b>Scriptable Objects are <style=\"highlight\">assets</style> which hold
+    data</b>\n  They can be referenced and modified at runtime\n  It is also possible
+    to execute logic\n  Asset means no scene reference \n  Enables <style=\"highlight\">isolated
+    prefabs</style>"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: bb8c36d7893425844bd608764863e8e4, type: 2}
   m_sharedMaterial: {fileID: -2620444848923945269, guid: bb8c36d7893425844bd608764863e8e4, type: 2}

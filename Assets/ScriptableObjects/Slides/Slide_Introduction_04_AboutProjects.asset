@@ -10,12 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f4ffea83e109454fbae368d53777ad87, type: 3}
-  m_Name: Slide_Introduction_02_Title
+  m_Name: Slide_Introduction_04_AboutProjects
   m_EditorClassIdentifier: 
   sceneReference: {fileID: 11400000, guid: 0263b61742e78dc4c913cfda63fab459, type: 2}
-  slideType: 1
-  title: 'Game development patterns & Tools
-
-    <style="highlight">in Unity</style>'
+  slideType: 3
+  title: About - cool projects!
   text: 
-  customContent: {fileID: 0}
+  customContent: {fileID: 3380100364615639742, guid: f3227fa01c205ae41ab6748cb6fb9119, type: 3}

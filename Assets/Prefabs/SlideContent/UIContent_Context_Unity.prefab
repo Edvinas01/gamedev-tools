@@ -140,13 +140,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: '- Simplified ECS model
-
-    - <style="highlight">Game Object</style> -
-    entity, id
-
-    - <style="highlight">Component</style> - holds data, executes
-    logic'
+  m_text: "<b>Similar to ECS but simpler</b>\n  <style=\"highlight\">Game Object</style>
+    - entity, id\n  <style=\"highlight\">Component</style> - holds data, executes
+    logic"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: bb8c36d7893425844bd608764863e8e4, type: 2}
   m_sharedMaterial: {fileID: -2620444848923945269, guid: bb8c36d7893425844bd608764863e8e4, type: 2}

@@ -80,9 +80,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mainCamera: {fileID: 1819467274560322522}
+  selectionPointerPrefab: {fileID: 3421212004484026800, guid: e36ba92a37d7fc440babd529859b801b, type: 3}
+  pointerYOffset: 1.5
   raycastLayerMask:
     serializedVersion: 2
     m_Bits: 64
   raycastDistance: 100
   clickDamage: 1
-  clickButton: Fire1
+  damageClickButton: Fire1
+  infoClickButton: Fire2

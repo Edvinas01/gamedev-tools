@@ -15,12 +15,12 @@ MonoBehaviour:
   sceneReference: {fileID: 11400000, guid: 0263b61742e78dc4c913cfda63fab459, type: 2}
   slideType: 2
   title: Collaboration - Scene References
-  text: '- When using direct <style="highlight">references</style> or <style="highlight">Unity
+  text: 'When using direct <style="highlight">references</style> or <style="highlight">Unity
     Events</style>, we often modify the scene
 
-    - This is problematic when working
+    This is problematic when working
     in a team
 
-    - Each modified file can result in, for example, a <style="highlight">Git
+    Each modified file can result in, for example, a <style="highlight">Git
     conflict</style>'
   customContent: {fileID: 3857851495989387928, guid: c2a513d2af9683c47a18fbde89d14720, type: 3}

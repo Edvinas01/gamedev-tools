@@ -5,7 +5,7 @@
 # Gamedev Tools
 
 Because screw Google Slides - presentation on various game design patterns and tools in Unity. You can find the presentation logic in an embedded package
-at [Packages/com.edd.simple-presenter](../Packages/com.edd.simple-presenter)
+at [Packages/com.edd.simple-presenter](../Packages/com.edd.simple-presenter).
 
 The latest release can be downloaded [here](https://github.com/Edvinas01/gamedev-tools/releases/latest).
 
