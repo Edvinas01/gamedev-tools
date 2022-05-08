@@ -11,6 +11,6 @@ The latest release can be downloaded [here](https://github.com/Edvinas01/gamedev
 
 ## Requirements
 
-- Unity 2022.3.x, install via [Unity Hub](https://unity3d.com/get-unity/download)
+- Unity 2021.3.x, install via [Unity Hub](https://unity3d.com/get-unity/download)
 - [Rider IDE](https://www.jetbrains.com/rider) (optional)
 - [Git](https://git-scm.com/downloads)
